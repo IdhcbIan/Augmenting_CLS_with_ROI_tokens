@@ -119,7 +119,7 @@ def _load_image(path):
     """Load a PIL image and preprocess it to tensor."""
     preprocess = transforms.Compose([
         transforms.Resize(256),
-        transforms.RandomResizedCrop(224),  # Training augmentation - match img_size
+        transforms.CenterCrop(224),  # Training augmentation - match img_size
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406],
                            std=[0.229, 0.224, 0.225]),
@@ -135,14 +135,11 @@ def _load_image(path):
 )
 def main(
     cub_root: str = "/mnt/data/CUB_200_2011",
-    steps: int = 200,
-    batch_size: int = 256,
+    steps: int = 20,
+    batch_size: int = 256,   #Will be multiplied by GPU count!!
     report_interval: int = 1,
     eval_batch_size: int = 100,  # Base eval batch size (will be multiplied by num_gpus)
     lr: float = 1e-5  # Lower learning rate for fine-tuning
-    #lr: float = 5e-6  # Lower learning rate for fine-tuning
-    #lr: float = 3e-4  # Lower learning rate for fine-tuning
-    #lr: float = 3e-5  # Lower learning rate for fine-tuning
 ):
     """
     Train CUB triplet model on Modal with multiple A100 GPUs.

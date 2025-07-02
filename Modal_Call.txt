@@ -9,5 +9,13 @@
 
 ------------------------------------------------------------------------------------
 
+modal run modal_app.py \
+  --cub-root /mnt/data/flowers_converted \
+  --steps 5 \
+  --batch-size 35 \
+  --report-interval 5 \
+  --eval-batch-size 64
 
+------------------------------------------------------------------------------------
 
+modal run modal_app_cub_multi.py
