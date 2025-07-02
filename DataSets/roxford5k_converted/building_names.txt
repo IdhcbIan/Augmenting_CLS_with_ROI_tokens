@@ -1,0 +1,17 @@
+0 all_souls
+1 ashmolean
+2 balliol
+3 bodleian
+4 christ_church
+5 cornmarket
+6 hertford
+7 jesus
+8 keble
+9 magdalen
+10 new
+11 oriel
+12 oxford
+13 pitt_rivers
+14 radcliffe_camera
+15 trinity
+16 worcester
