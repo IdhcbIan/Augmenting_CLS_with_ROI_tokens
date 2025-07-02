@@ -119,7 +119,9 @@ def main(
 
 ### Key Metrics
 - **Recall@1**: Primary retrieval accuracy metric
+- **Recall@2**: Top-2 retrieval performance
 - **Recall@4**: Top-4 retrieval performance
+- **Recall@8**: Top-8 retrieval performance (Not Aways Used)
 - **ColBERT Score**: Multi-token similarity measure
 
 ## 🔬 Technical Details
@@ -152,7 +154,6 @@ Augmenting_CLS_with_ROI_tokens/
 │
 ├── Modal_Flowers/              # Oxford Flowers implementations
 │   ├── modal_app_Flowers.py    # Flowers training on Modal
-│   ├── train_flowers.py        # Local training
 │   └── [shared modules]        # buddy_pool.py, maxsim_loss.py, etc.
 │
 ├── Modal_ROxford/              # Oxford Buildings implementations
