@@ -18,30 +18,6 @@ This repository implements a novel approach to image retrieval by augmenting tra
 - **10-Token Representation**: Combined cues + ROIs for rich image representation
 - **ColBERT Scoring**: Max-similarity matching for flexible multi-vector retrieval
 
-## 🏗️ Architecture
-
-```mermaid
-graph TB
-    A[Input Image] --> B[DINOv2 ViT-B/14 + Registers]
-    B --> C[CLS Token]
-    B --> D[4 Register Tokens]
-    B --> E[Patch Tokens H×W]
-    
-    C --> F[Cue Tokens: 5×D]
-    D --> F
-    
-    F --> G[Buddy Pooling]
-    E --> G
-    G --> H[ROI Tokens: 5×D]
-    
-    F --> I[Final Representation: 10×D]
-    H --> I
-    
-    I --> J[L2 Normalization]
-    J --> K[ColBERT Scoring]
-    K --> L[Triplet Loss Training]
-```
-
 ## 🔧 Technical Implementation
 
 ### Core Components
