@@ -172,13 +172,6 @@ Augmenting_CLS_with_ROI_tokens/
     └── Original_Code/          # Reference implementations
 ```
 
-## 📚 References
-
-1. **DINOv2**: [Learning Robust Visual Features without Supervision](https://arxiv.org/abs/2304.07193)
-2. **ColBERT**: [Efficient and Effective Passage Search via Contextualized Late Interaction](https://arxiv.org/abs/2004.12832)
-3. **Vision Transformers**: [An Image is Worth 16x16 Words](https://arxiv.org/abs/2010.11929)
-4. **CUB-200-2011**: [The Caltech-UCSD Birds-200-2011 Dataset](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html)
-
 <div align="center">
 
 **⭐ Star this repository if you find it useful!**
