@@ -159,14 +159,6 @@ The code does not define one canonical benchmark protocol or a consolidated resu
 
 Do not treat values printed by an exploratory script as publication-ready results without validating the protocol and repeating the experiment.
 
-## Reproducibility notes
-
-The current scripts use stochastic sampling and do not consistently set all random seeds.
-
-For reproducible studies, set and record seeds for Python, NumPy, and PyTorch. Preserve the full checkpoint and configuration, record the Git commit, and evaluate with a fixed, documented protocol.
-
-Deterministic CUDA settings may reduce performance and should be reported when enabled.
-
 ## References
 
 If this repository contributes to published work, add the paper citation here before release. The implementation relies on the following methodological foundations:
